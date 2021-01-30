@@ -272,7 +272,7 @@ namespace luby_incubadora3
         {
             if (qnt_cur > 0)
             {
-                string resposta = Microsoft.VisualBasic.Interaction.InputBox("Por favor, insira o valor do produto.", "Comprar produto", "");
+                string resposta = Microsoft.VisualBasic.Interaction.InputBox("Por favor, insira o valor do produto (apenas números inteiros).", "Comprar produto", "");
                 int valor_pago = int.Parse(resposta);
                 if (valor_pago < valor)
                 {
@@ -280,12 +280,23 @@ namespace luby_incubadora3
                     {
                         int falt = valor - valor_pago;
                         string falt_formatado = (falt).ToString("C");
-                        string resposta2 = Microsoft.VisualBasic.Interaction.InputBox("Por favor, insira o valor restante de " + falt_formatado + ".", "Inteirar valor", "");
+                        string resposta2 = Microsoft.VisualBasic.Interaction.InputBox("Por favor, insira o valor restante de " + falt_formatado + " (apenas números inteiros).", "Inteirar valor", "");
                         valor_pago += int.Parse(resposta2);
                     }
-                    MessageBox.Show("Obrigado por comprar o produto!");
-                    qnt_cur -= 1;
-                    valor_vendido += valor;
+                    if (valor_pago > valor)
+                    {
+                        int dif = valor_pago - valor;
+                        string dif_formatada = (dif).ToString("C");
+                        MessageBox.Show("Obrigado por comprar o produto! Aqui estão os " + dif_formatada + " de troco!");
+                        qnt_cur -= 1;
+                        valor_vendido += valor;
+                    }
+                    else if (valor_pago == valor)
+                    {
+                        MessageBox.Show("Obrigado por comprar o produto!");
+                        qnt_cur -= 1;
+                        valor_vendido += valor;
+                    }
                 }
                 else if (valor_pago == valor)
                 {
