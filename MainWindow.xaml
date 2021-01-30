@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:luby_incubadora3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+<!--
+    <StackPanel>
+        <ToolBar>
+            <Button Content="Button1"></Button>
+            <Button Content="Button2"></Button>
+            <Menu>
+                <MenuItem Header="Menu">
+                    <MenuItem Header="MenuItem1"/>
+                </MenuItem>
+            </Menu>
+        </ToolBar>
+    </StackPanel>
+-->
 </Window>
