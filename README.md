@@ -20,9 +20,9 @@ Orientações para o uso da Vending Machine:
 
   3.1 - Caso inserir um valor menor que o do produto e apertar Enter, um novo diálogo irá aparecer pedindo o valor faltante para completar seu valor. Isso irá se repetir até que     o valor total entrado para esse produto seja equivalente ou superior ao valor do produto.
 
-    3.1.1 - Caso o valor total entrado seja equivalente ao valor do produto, um diálogo irá agradecer pela compra e a quantidade do produto em estoque será atualizada.
+   3.1.1 - Caso o valor total entrado seja equivalente ao valor do produto, um diálogo irá agradecer pela compra e a quantidade do produto em estoque será atualizada.
 
-    3.1.2 - Caso o valor total entrado seja superior ao valor do produto, um diálogo irá agradecer pela compra e informar qual o troco a ser devolvido, e então a quantidade do         produto em estoque será atualizada.
+   3.1.2 - Caso o valor total entrado seja superior ao valor do produto, um diálogo irá agradecer pela compra e informar qual o troco a ser devolvido, e então a quantidade do         produto em estoque será atualizada.
 
   3.2 - Caso inserir o valor exato do produto e apertar Enter, um diálogo irá agradecer pela compra e a quantidade do produto em estoque será atualizada.
 
